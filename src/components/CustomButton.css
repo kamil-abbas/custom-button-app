@@ -1,0 +1,24 @@
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.custom-button{
+    background-color: antiquewhite;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.button-hint{
+    visibility: hidden;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    font-style: italic;
+}
+
+.button-container:hover ~ .button-hint{
+    visibility: visible;
+}
